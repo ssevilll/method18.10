@@ -1,0 +1,14 @@
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.GeneratedMSBuildEditorConfig.editorconfig
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.AssemblyInfoInputs.cache
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.AssemblyInfo.cs
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.csproj.CoreCompileInputs.cache
+D:\razdel c\Desktop\method18.10\method18.10\bin\Debug\net8.0\method18.10.exe
+D:\razdel c\Desktop\method18.10\method18.10\bin\Debug\net8.0\method18.10.deps.json
+D:\razdel c\Desktop\method18.10\method18.10\bin\Debug\net8.0\method18.10.runtimeconfig.json
+D:\razdel c\Desktop\method18.10\method18.10\bin\Debug\net8.0\method18.10.dll
+D:\razdel c\Desktop\method18.10\method18.10\bin\Debug\net8.0\method18.10.pdb
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.dll
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\refint\method18.10.dll
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.pdb
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.genruntimeconfig.cache
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\ref\method18.10.dll
