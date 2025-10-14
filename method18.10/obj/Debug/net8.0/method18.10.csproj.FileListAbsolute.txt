@@ -12,3 +12,4 @@ D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\refint\method18.10.
 D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.pdb
 D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.genruntimeconfig.cache
 D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\ref\method18.10.dll
+D:\razdel c\Desktop\method18.10\method18.10\obj\Debug\net8.0\method18.10.sourcelink.json
