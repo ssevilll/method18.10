@@ -111,8 +111,73 @@
         //    return true;
         //} 
         #endregion
-        { 
-        
-        }
+        #region Task-5
+        //{ 
+        //    int N= 100;
+        //    int M= 200;
+        //    Polindrome(N, M);
+        //}
+        //public static void Polindrome(int a, int b)
+        //{
+        //    for (int i=a; i<=b; i++)
+        //    {
+        //        string str = i.ToString();
+        //        int count = 0;
+        //        for (int j = 0; j < str.Length / 2; j++)
+        //        {
+        //            if (str[j] == str[str.Length - 1 - j])
+        //            {
+        //                count++;
+        //            }
+        //        }
+        //        if (count == str.Length / 2)
+        //        {
+        //            Console.WriteLine(str);
+        //        }
+        //    }
+        //} 
+        #endregion
+        #region Task-6
+        //{ 
+        //    string word = "abccccdd";
+        //    MostUsedCharacter(word);
+        //}
+        //public static void MostUsedCharacter(string s)
+        //{
+        //    char[] chars = s.ToCharArray();
+        //    Array.Sort(chars);
+        //    int tempCount = 1;
+        //    int maxCount = tempCount;
+        //    char mostUsedChar = chars[0];
+        //    char temp = chars[0];
+        //    for (int i = 1; i < chars.Length; i++)
+        //    {
+        //        if (chars[i] == temp)
+        //        {
+        //            tempCount++;
+        //        }
+        //        else
+        //        {
+        //            if (tempCount > maxCount)
+        //            {
+        //                maxCount = tempCount;
+        //                mostUsedChar = temp;
+        //            }
+
+        //            tempCount = 1;
+        //            temp = chars[i];
+        //        }
+        //    }
+
+        //    if (tempCount > maxCount)
+        //    {
+        //        maxCount = tempCount;
+        //        mostUsedChar = temp;
+        //    }
+
+        //    Console.WriteLine(mostUsedChar);
+        //    Console.WriteLine(maxCount);
+        //} 
+        #endregion
     }
 }
