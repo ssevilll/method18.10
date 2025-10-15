@@ -89,7 +89,30 @@
         //    return '0';
         //} 
         #endregion
+        #region Task-4
+        //{
+        //    int a = 7;
+        //    if (IsPrime(a))
+        //    {
+        //        Console.WriteLine("sadedir");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("sade deyil");
+        //    }
+        //}
+        //public static bool IsPrime(int number)
+        //{
+        //    if (number <= 1) return false;
+        //    for (int i = 2; i <= Math.Sqrt(number); i++)
+        //    {
+        //        if (number % i == 0) return false;
+        //    }
+        //    return true;
+        //} 
+        #endregion
         { 
+        
         }
     }
 }
