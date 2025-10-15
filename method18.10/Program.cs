@@ -56,8 +56,40 @@
 
         //} 
         #endregion
-        {
+        #region Task-3
+        //{
+        //    string sentence="kertenkele";
+        //    if (IsUniqe(sentence) != '0')
+        //    {
+        //        Console.WriteLine(IsUniqe(sentence));
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Bele bir simvol yoxdur");
+        //    }
+        //}
 
+        //public static char IsUniqe (string word) {
+        //    for (int i = 0; i < word.Length; i++)
+        //    {
+        //        bool isUniqe = true;
+        //        for (int j = 0; j < word.Length; j++)
+        //        {
+        //            if ((word[i] == word[j]) && (i != j))
+        //            {
+        //                isUniqe= false;
+        //                break;
+        //            }
+        //        }
+        //        if (isUniqe)
+        //        {
+        //            return word[i];
+        //        }
+        //    }
+        //    return '0';
+        //} 
+        #endregion
+        { 
         }
     }
 }
