@@ -223,33 +223,86 @@
         //    }
         //} 
         #endregion
-        { 
-            int number = 23569;
-            Console.WriteLine(SumOfPrimeNumbers(number));
-        }
+        #region Task-9
+        //{ 
+        //    int number = 23569;
+        //    Console.WriteLine(SumOfPrimeNumbers(number));
+        //}
 
-        public static int SumOfPrimeNumbers (int num)
+        //public static int SumOfPrimeNumbers (int num)
+        //{
+        //    int sum = 0;
+        //    while (num > 0)
+        //    {
+        //        int digit = num % 10;
+        //        int count = 0;
+        //        for (int i = 2; i < digit; i++)
+        //        {
+        //            if (digit % i != 0)
+        //            {
+        //                count++;
+        //            }
+        //        }
+        //        if (count == digit - 2)
+        //        {
+        //            sum += digit;
+
+        //        }
+        //        num /= 10;
+        //    }
+        //    return sum;
+        //} 
+        #endregion
         {
-            int sum = 0;
-            while (num > 0)
+            int n = 296;
+            BiggestPossibleNumber(n);
+
+        }
+        public static void BiggestPossibleNumber(int number)
+        {
+            if (number < 100 || number > 999)
             {
-                int digit = num % 10;
-                int count = 0;
-                for (int i = 2; i < digit; i++)
+                Console.WriteLine("3 reqemli eded daxil edin");
+            }
+            else
+            {
+                int d1 = number % 10;
+                int d2 = (number / 10) % 10;
+                int d3 = number / 100;
+                if (d1 > d2 && d1 > d3)
                 {
-                    if (digit % i != 0)
+                    if (d2 > d3)
                     {
-                        count++;
+                        Console.WriteLine($"{d1}{d2}{d3}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{d1}{d3}{d2}");
                     }
                 }
-                if (count == digit - 2)
+                else if (d2 > d1 && d2 > d3)
                 {
-                    sum += digit;
-
+                    if (d1 > d3)
+                    {
+                        Console.WriteLine($"{d2}{d1}{d3}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{d2}{d3}{d1}");
+                    }
                 }
-                num /= 10;
+                else
+                {
+                    if (d1 > d2)
+                    {
+                        Console.WriteLine($"{d3}{d1}{d2}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{d3}{d2}{d1}");
+                    }
+                }
             }
-            return sum;
         }
     }
 }
