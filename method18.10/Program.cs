@@ -306,45 +306,65 @@
         //    }
         //} 
         #endregion
+        #region Task-11
+        //{
+        //    int n = 1429;
+        //    Console.WriteLine(IsIncreasing(n));
+        //}
+        //public static string IsIncreasing(int num)
+        //{
+        //    int numcopy = num;
+        //    int count = 0;
+        //    int length = 0;
+        //    while (numcopy > 0)
+        //    {
+        //        numcopy /= 10;
+        //        length++;
+        //    }
+        //    int[] digits = new int[length];
+        //    numcopy = num;
+        //    for (int i = length - 1; i >= 0; i--)
+        //    {
+        //        digits[i] = numcopy % 10;
+        //        numcopy /= 10;
+        //    }
 
+        //    for (int i = 1; i < digits.Length; i++)
+        //    {
+        //        if (digits[i] >= digits[i - 1])
+        //        {
+        //            count++;
+        //        }
+        //    }
+
+        //    if (count == digits.Length - 1)
+        //    {
+        //        return "artan siradir";
+        //    }
+        //    else
+        //    {
+        //        return "artan sira deyil";
+        //    }
+        //} 
+        #endregion
         {
-            int n = 1429;
-            Console.WriteLine(IsIncreasing(n));
+            int n = 44444444;
+            Console.WriteLine(IsThereAnyDifferentNumber(n));
         }
-        public static string IsIncreasing(int num)
+        public static string IsThereAnyDifferentNumber(int num)
         {
-            int numcopy = num;
-            int count = 0;
-            int length = 0;
-            while (numcopy > 0)
+            string result = "Butun reqemler eynidir";
+            int digit = num % 10;
+            while (num > 0)
             {
-                numcopy /= 10;
-                length++;
-            }
-            int[] digits = new int[length];
-            numcopy = num;
-            for (int i = length - 1; i >= 0; i--)
-            {
-                digits[i] = numcopy % 10;
-                numcopy /= 10;
-            }
-
-            for (int i = 1; i < digits.Length; i++)
-            {
-                if (digits[i] >= digits[i - 1])
+                if (num % 10 != digit)
                 {
-                    count++;
+                    result = "Ferqli reqemler var";
+                    break;
                 }
+                num /= 10;
             }
-
-            if (count == digits.Length - 1)
-            {
-                return "artan siradir";
-            }
-            else
-            {
-                return "artan sira deyil";
-            }
+            return (result);
         }
     }
 }
