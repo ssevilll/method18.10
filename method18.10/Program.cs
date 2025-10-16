@@ -253,55 +253,97 @@
         //    return sum;
         //} 
         #endregion
-        {
-            int n = 296;
-            BiggestPossibleNumber(n);
+        #region Task-10
+        //{
+        //    int n = 296;
+        //    BiggestPossibleNumber(n);
 
-        }
-        public static void BiggestPossibleNumber(int number)
+        //}
+        //public static void BiggestPossibleNumber(int number)
+        //{
+        //    if (number < 100 || number > 999)
+        //    {
+        //        Console.WriteLine("3 reqemli eded daxil edin");
+        //    }
+        //    else
+        //    {
+        //        int d1 = number % 10;
+        //        int d2 = (number / 10) % 10;
+        //        int d3 = number / 100;
+        //        if (d1 > d2 && d1 > d3)
+        //        {
+        //            if (d2 > d3)
+        //            {
+        //                Console.WriteLine($"{d1}{d2}{d3}");
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine($"{d1}{d3}{d2}");
+        //            }
+        //        }
+        //        else if (d2 > d1 && d2 > d3)
+        //        {
+        //            if (d1 > d3)
+        //            {
+        //                Console.WriteLine($"{d2}{d1}{d3}");
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine($"{d2}{d3}{d1}");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if (d1 > d2)
+        //            {
+        //                Console.WriteLine($"{d3}{d1}{d2}");
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine($"{d3}{d2}{d1}");
+        //            }
+        //        }
+        //    }
+        //} 
+        #endregion
+
         {
-            if (number < 100 || number > 999)
+            int n = 1429;
+            Console.WriteLine(IsIncreasing(n));
+        }
+        public static string IsIncreasing(int num)
+        {
+            int numcopy = num;
+            int count = 0;
+            int length = 0;
+            while (numcopy > 0)
             {
-                Console.WriteLine("3 reqemli eded daxil edin");
+                numcopy /= 10;
+                length++;
+            }
+            int[] digits = new int[length];
+            numcopy = num;
+            for (int i = length - 1; i >= 0; i--)
+            {
+                digits[i] = numcopy % 10;
+                numcopy /= 10;
+            }
+
+            for (int i = 1; i < digits.Length; i++)
+            {
+                if (digits[i] >= digits[i - 1])
+                {
+                    count++;
+                }
+            }
+
+            if (count == digits.Length - 1)
+            {
+                return "artan siradir";
             }
             else
             {
-                int d1 = number % 10;
-                int d2 = (number / 10) % 10;
-                int d3 = number / 100;
-                if (d1 > d2 && d1 > d3)
-                {
-                    if (d2 > d3)
-                    {
-                        Console.WriteLine($"{d1}{d2}{d3}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{d1}{d3}{d2}");
-                    }
-                }
-                else if (d2 > d1 && d2 > d3)
-                {
-                    if (d1 > d3)
-                    {
-                        Console.WriteLine($"{d2}{d1}{d3}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{d2}{d3}{d1}");
-                    }
-                }
-                else
-                {
-                    if (d1 > d2)
-                    {
-                        Console.WriteLine($"{d3}{d1}{d2}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{d3}{d2}{d1}");
-                    }
-                }
+                return "artan sira deyil";
             }
         }
     }
