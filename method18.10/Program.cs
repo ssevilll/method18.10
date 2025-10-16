@@ -179,5 +179,29 @@
         //    Console.WriteLine(maxCount);
         //} 
         #endregion
+        { 
+            int a=3, b=4, c=5;
+            TypeOfTriangle(a, b, c);
+        }
+
+        public static void TypeOfTriangle (int a1, int a2, int a3)
+        {
+            if (a1 * a1 + a2 * a2 == a3 * a3 || a2 * a2 + a3 * a3 == a1 * a1 || a1 * a1 + a3 * a3 == a2 * a2)
+            {
+                Console.WriteLine("Duzbucaqli ucbucaqdir");
+            }
+            else if (a1 == a2 && a2 == a3)
+            {
+                Console.WriteLine("Beraber terefli ucbucaqdir");
+            }
+            else if (a1 == a2 || a2 == a3 || a1 == a3)
+            {
+                Console.WriteLine("Beraber yanli ucbucaqdir");
+            }
+            else
+            {
+                Console.WriteLine("Muxtelif terefli ucbucaqdir");
+            }
+        }
     }
 }
