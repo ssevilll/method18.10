@@ -205,21 +205,51 @@
         //    }
         //} 
         #endregion
-        {
-            string str = "Market";
-            MiddleSymbol(str);
+        #region Task-8
+        //{
+        //    string str = "Market";
+        //    MiddleSymbol(str);
+        //}
+        //public static void MiddleSymbol(string s)
+        //{
+        //    int len = s.Length;
+        //    if (len % 2 == 0)
+        //    {
+        //        Console.WriteLine(s[len / 2 - 1] + "" + s[len / 2]);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(s[len / 2]);
+        //    }
+        //} 
+        #endregion
+        { 
+            int number = 23569;
+            Console.WriteLine(SumOfPrimeNumbers(number));
         }
-        public static void MiddleSymbol(string s)
+
+        public static int SumOfPrimeNumbers (int num)
         {
-            int len = s.Length;
-            if (len % 2 == 0)
+            int sum = 0;
+            while (num > 0)
             {
-                Console.WriteLine(s[len / 2 - 1] + "" + s[len / 2]);
+                int digit = num % 10;
+                int count = 0;
+                for (int i = 2; i < digit; i++)
+                {
+                    if (digit % i != 0)
+                    {
+                        count++;
+                    }
+                }
+                if (count == digit - 2)
+                {
+                    sum += digit;
+
+                }
+                num /= 10;
             }
-            else
-            {
-                Console.WriteLine(s[len / 2]);
-            }
+            return sum;
         }
     }
 }
