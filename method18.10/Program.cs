@@ -3,6 +3,8 @@
     internal class Program
     {
         static void Main(string[] args)
+
+
         #region Task-1
         //{
         //    int[] nums = { 1, 2, 3, 4, 5 };
@@ -21,6 +23,8 @@
         //    return arr;
         //} 
         #endregion
+
+
         #region Task-2
         //{
         //    int[] nums = { 1, 2, 3, 4, 5 };
@@ -56,6 +60,8 @@
 
         //} 
         #endregion
+
+
         #region Task-3
         //{
         //    string sentence="kertenkele";
@@ -89,6 +95,8 @@
         //    return '0';
         //} 
         #endregion
+
+
         #region Task-4
         //{
         //    int a = 7;
@@ -111,6 +119,8 @@
         //    return true;
         //} 
         #endregion
+
+
         #region Task-5
         //{ 
         //    int N= 100;
@@ -137,6 +147,8 @@
         //    }
         //} 
         #endregion
+
+
         #region Task-6
         //{ 
         //    string word = "abccccdd";
@@ -179,6 +191,8 @@
         //    Console.WriteLine(maxCount);
         //} 
         #endregion
+
+
         #region Task-7
         //{ 
         //    int a=3, b=4, c=5;
@@ -205,6 +219,8 @@
         //    }
         //} 
         #endregion
+
+
         #region Task-8
         //{
         //    string str = "Market";
@@ -223,6 +239,8 @@
         //    }
         //} 
         #endregion
+
+
         #region Task-9
         //{ 
         //    int number = 23569;
@@ -253,6 +271,8 @@
         //    return sum;
         //} 
         #endregion
+
+
         #region Task-10
         //{
         //    int n = 296;
@@ -306,6 +326,8 @@
         //    }
         //} 
         #endregion
+
+
         #region Task-11
         //{
         //    int n = 1429;
@@ -347,24 +369,86 @@
         //    }
         //} 
         #endregion
-        {
-            int n = 44444444;
-            Console.WriteLine(IsThereAnyDifferentNumber(n));
-        }
-        public static string IsThereAnyDifferentNumber(int num)
-        {
-            string result = "Butun reqemler eynidir";
-            int digit = num % 10;
-            while (num > 0)
-            {
-                if (num % 10 != digit)
-                {
-                    result = "Ferqli reqemler var";
-                    break;
-                }
-                num /= 10;
-            }
-            return (result);
-        }
+
+
+        #region Task-12
+        //{
+        //    int n = 44444444;
+        //    Console.WriteLine(IsThereAnyDifferentNumber(n));
+        //}
+        //public static string IsThereAnyDifferentNumber(int num)
+        //{
+        //    string result = "Butun reqemler eynidir";
+        //    int digit = num % 10;
+        //    while (num > 0)
+        //    {
+        //        if (num % 10 != digit)
+        //        {
+        //            result = "Ferqli reqemler var";
+        //            break;
+        //        }
+        //        num /= 10;
+        //    }
+        //    return (result);
+        //} 
+        #endregion
+
+
+        
+            
+        #region Classtasks
+        //{
+        //string sentence = "    Hikmet Abbasov";
+        //RemoveSpaces(ref sentence);
+        //Console.WriteLine(sentence);
+        //int[] arr = { 1, 2, 3, 4, 5 };
+        //SquareOfElements(ref arr);
+        //foreach (var item in arr)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        //int n = 12;
+        //int m = 50;
+        //OddNumbers(n, m);
+
+
+        //}
+        //public static void OddNumbers(int n, int m)
+        //{
+        //    int count = 0;
+        //    for (int i = n; i < m; i++)
+        //    {
+        //        if (i % 2 != 0)
+        //        {
+        //            count++;
+        //        }
+        //    }
+        //    Console.WriteLine(count);
+        //public static int[] SquareOfElements(ref int[] arr)
+        //{
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        arr[i] = arr[i] * arr[i];
+        //    }
+        //    return arr;
+        //}
+        //public static string RemoveSpaces(ref string str)
+        //{
+        //    string newString = "";
+        //    for (int i = 0; i < str.Length; i++)
+        //    {
+        //        if (str[i] != ' ')
+        //        {
+        //            newString += str[i];
+        //        }
+        //    }
+        //    str= newString;
+        //    return str;
+        //}
+
+        //} 
+        #endregion
+        { }
+
     }
 }
